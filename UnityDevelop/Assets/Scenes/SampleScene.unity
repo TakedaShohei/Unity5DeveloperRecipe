@@ -281,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 424016, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 236.56924
+      value: 237.49
       objectReference: {fileID: 0}
     - target: {fileID: 424016, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
       propertyPath: m_LocalRotation.x
@@ -317,6 +317,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
+--- !u!1 &425267377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 136798, guid: aada9fdf6265e0e40bc2b9f06b717c02,
+    type: 3}
+  m_PrefabInstance: {fileID: 425267376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &425267378
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425267377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 7.5
+  m_Radius: 2.42
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: -0.25, y: 4, z: -0.48}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 190, y: 263, z: 0}
+  m_LocalPosition: {x: 178.1, y: 4.4, z: 216.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
