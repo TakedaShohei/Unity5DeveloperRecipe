@@ -1,4 +1,4 @@
 sceneSetups:
-- path: D:/Users/MakingGame/PART01_CHAPTER01/002/before/RobotAction/Assets/Main.unity
+- path: Assets/Scenes/SampleScene.unity
   isLoaded: 1
   isActive: 1
