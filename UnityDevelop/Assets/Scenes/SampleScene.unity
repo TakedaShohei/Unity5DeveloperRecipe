@@ -315,6 +315,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 447768, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447768, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447768, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447768, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 447768, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aada9fdf6265e0e40bc2b9f06b717c02, type: 3}
 --- !u!1 &425267377 stripped
@@ -340,7 +360,31 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: -0.25, y: 4, z: -0.48}
+  m_Center: {x: -0.25, y: 3.7, z: -0.48}
+--- !u!114 &425267379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425267377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3a4fbfe38c82040880507479985450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller_: {fileID: 425267378}
+  speed: 15
+  jump_speed: 8
+  gravity: 20
+  ray_transform: {fileID: 425267380}
+  ray_range: 0
+--- !u!4 &425267380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 424016, guid: aada9fdf6265e0e40bc2b9f06b717c02,
+    type: 3}
+  m_PrefabInstance: {fileID: 425267376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +396,6 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
-  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -424,18 +467,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &534669906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b3a4fbfe38c82040880507479985450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  jump_speed: 0.5
-  gravity: 0.5
