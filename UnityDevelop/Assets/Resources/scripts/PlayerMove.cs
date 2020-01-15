@@ -51,17 +51,20 @@ public class PlayerMove : MonoBehaviour
 
     public void PlayerRotate()
     {
-        int x = 1;
+       
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
+
+        GameObject camera_parent = Camera.main.transform.parent.gameObject;
+        
         if (Input.GetKey("q"))
         {
-            int up_ = -1;
-            Camera.main.transform.Rotate(up_, 0, 0);
+            int up_ = 1;
+           camera_parent.transform.Rotate(up_, 0, 0);
         }
         if (Input.GetKey("z"))
         {
-            int down_ = 1;
-            Camera.main.transform.Rotate(down_, 0, 0);
+            int down_ = -1;
+            camera_parent.transform.Rotate(down_, 0, 0);
 
         }
     }
